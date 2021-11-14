@@ -1,6 +1,8 @@
-*{box-sizing:border-box;}
+* {
+  box-sizing: border-box;
+}
 
-body{
+body {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -9,16 +11,16 @@ body{
   background-color: #0e80b0;
 }
 
-.btn{
+.btn {
   background-color: #ffffff;
-  color: #e5dc12;
-  font-family: 'Montserrat', 'sans-serif';
+  color: #e5dc15;
+  font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   margin: 15px;
   padding: 5px;
-  border: 2px solid #e5dc12;
+  border: 2px solid #e5dc15;
   border-radius: 5px;
-  box-shadow: 0 12px #e5dc10, 0 18px rgba(0,0,0,0.4);
+  box-shadow: 0 12px #c2bb11, 0 18px rgba(0, 0, 0, 0.4);
   font-size: 60px;
   width: 90px;
   height: 80px;
@@ -29,6 +31,13 @@ body{
 
 .disabled .btn {
   cursor: default;
+}
+
+.disabled .btn:hover {
+  top: 0;
+  background: #ffffff;
+  color: #e5dc15;
+  box-shadow: 0 12px #c2bb11, 0 18px rgba(0, 0, 0, 0.4);
 }
 
 .btn.disabled {
@@ -42,22 +51,23 @@ body{
   box-shadow: 0 12px #c2bb11, 0 18px rgba(0, 0, 0, 0.4);
 }
 
-.btn:hover{
-  background-color: #e5dc12;
+.btn:hover {
+  background-color: #e5dc15;
   color: #0e80b0;
   top: 4px;
-  box-shadow: 0 8px #c2bb11, 0 14px rgba(0,0,0,0.4);
+  box-shadow: 0 8px #c2bb11, 0 14px rgba(0, 0, 0, 0.4);
 }
 
-.btn:active{
+.btn:active {
   top: 8px;
-  box-shadow: 0 4px #c2bb11, 0 10px rgba(0,0,0,0.4);
+  box-shadow: 0 4px #c2bb11, 0 10px rgba(0, 0, 0, 0.4);
 }
 
 .game {
   display: flex;
   flex-wrap: wrap;
 }
+
 .game-info {
   margin: 15px;
   color: #ffffff;
